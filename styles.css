@@ -5959,6 +5959,459 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
+/* AI-generated section */
+/* =============================================
+   ShopZone CTA Section — Full Styles
+   ============================================= */
+
+.sz-cta-section {
+  position: relative;
+  background: #1a1612;
+  padding: 90px 24px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  overflow: hidden;
+}
+
+/* --- Background Decorations --- */
+.sz-cta-bg-decoration {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sz-cta-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.07;
+  background: var(--gradient-primary, linear-gradient(135deg, #c56e43 0%, #a95531 100%));
+}
+
+.sz-cta-circle--1 {
+  width: 500px;
+  height: 500px;
+  top: -200px;
+  right: -150px;
+}
+
+.sz-cta-circle--2 {
+  width: 300px;
+  height: 300px;
+  bottom: -100px;
+  left: 10%;
+  opacity: 0.05;
+}
+
+.sz-cta-circle--3 {
+  width: 180px;
+  height: 180px;
+  top: 40%;
+  left: 40%;
+  opacity: 0.04;
+}
+
+/* --- Container --- */
+.sz-cta-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* =============================================
+   RIGHT COLUMN — Content / Value Prop
+   ============================================= */
+
+.sz-cta-content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.sz-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  background: rgba(197, 110, 67, 0.18);
+  color: #e8956a;
+  border: 1px solid rgba(197, 110, 67, 0.35);
+  border-radius: 50px;
+  padding: 6px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sz-cta-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.sz-cta-description {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.75;
+  margin: 0;
+  max-width: 440px;
+}
+
+/* --- Benefits List --- */
+.sz-cta-benefits {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sz-cta-benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.sz-cta-check-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  background: var(--gradient-primary, linear-gradient(135deg, #c56e43 0%, #a95531 100%));
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(197, 110, 67, 0.4);
+}
+
+.sz-cta-benefit-text {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+/* --- Social Proof --- */
+.sz-cta-social-proof {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.sz-cta-avatars {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.sz-cta-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gradient-primary, linear-gradient(135deg, #c56e43 0%, #a95531 100%));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border: 2px solid #1a1612;
+  margin-right: -8px;
+}
+
+.sz-cta-avatar:first-child {
+  margin-right: 0;
+}
+
+.sz-cta-social-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* =============================================
+   LEFT COLUMN — Form Card
+   ============================================= */
+
+.sz-cta-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 36px;
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sz-cta-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 40px 100px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+/* --- Card Header --- */
+.sz-cta-card-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.sz-cta-card-icon {
+  font-size: 2.4rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 6px rgba(197, 110, 67, 0.35));
+}
+
+.sz-cta-card-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--primary, #2E2A26);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.sz-cta-card-subtitle {
+  font-size: 0.875rem;
+  color: #888;
+  margin: 0;
+}
+
+/* --- Form --- */
+.sz-cta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sz-cta-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.sz-cta-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+  text-align: right;
+}
+
+.sz-cta-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sz-cta-input-icon {
+  position: absolute;
+  right: 14px;
+  font-size: 16px;
+  pointer-events: none;
+  line-height: 1;
+  z-index: 1;
+}
+
+.sz-cta-input {
+  width: 100%;
+  padding: 14px 44px 14px 16px;
+  border: 2px solid #e8e0d8;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: system-ui, sans-serif;
+  color: var(--primary, #2E2A26);
+  background: #faf8f6;
+  direction: rtl;
+  box-sizing: border-box;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  outline: none;
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.sz-cta-input::placeholder {
+  color: #bbb;
+}
+
+.sz-cta-input:focus {
+  border-color: #c56e43;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(197, 110, 67, 0.15);
+}
+
+.sz-cta-input--price::-webkit-inner-spin-button,
+.sz-cta-input--price::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* --- Submit Button --- */
+.sz-cta-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 17px 28px;
+  background: var(--gradient-primary, linear-gradient(135deg, #c56e43 0%, #a95531 100%));
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: system-ui, sans-serif;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  box-shadow: 0 6px 24px rgba(169, 85, 49, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  margin-top: 4px;
+}
+
+.sz-cta-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(169, 85, 49, 0.55);
+  filter: brightness(1.08);
+}
+
+.sz-cta-submit-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 14px rgba(169, 85, 49, 0.4);
+}
+
+.sz-cta-submit-btn:focus-visible {
+  outline: 3px solid #c56e43;
+  outline-offset: 3px;
+}
+
+.sz-cta-btn-text {
+  font-size: 1.1rem;
+}
+
+.sz-cta-btn-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.sz-cta-submit-btn:hover .sz-cta-btn-arrow {
+  transform: translateX(-4px);
+}
+
+/* --- Disclaimer --- */
+.sz-cta-disclaimer {
+  font-size: 0.8rem;
+  color: #999;
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* --- Card Footer --- */
+.sz-cta-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #f0ebe5;
+}
+
+.sz-cta-footer-star {
+  color: #f5a623;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.sz-cta-footer-rating {
+  font-size: 0.85rem;
+  color: #777;
+  font-weight: 500;
+}
+
+/* =============================================
+   RESPONSIVE — Tablet
+   ============================================= */
+
+@media (max-width: 960px) {
+  .sz-cta-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .sz-cta-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .sz-cta-description {
+    max-width: 560px;
+  }
+
+  .sz-cta-benefit-item {
+    justify-content: center;
+  }
+
+  .sz-cta-social-proof {
+    justify-content: center;
+  }
+
+  .sz-cta-card {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — Mobile
+   ============================================= */
+
+@media (max-width: 600px) {
+  .sz-cta-section {
+    padding: 60px 16px;
+  }
+
+  .sz-cta-heading {
+    font-size: 1.8rem;
+  }
+
+  .sz-cta-card {
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+
+  .sz-cta-card-title {
+    font-size: 1.2rem;
+  }
+
+  .sz-cta-submit-btn {
+    font-size: 1rem;
+    padding: 15px 20px;
+  }
+
+  .sz-cta-circle--1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: -80px;
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
