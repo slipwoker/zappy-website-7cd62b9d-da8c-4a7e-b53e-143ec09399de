@@ -5723,6 +5723,337 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
+/* AI-generated section */
+/* ========== TechZone Categories Section ========== */
+
+.tz-categories {
+  background: linear-gradient(160deg, #0d1b2e 0%, #0f2340 50%, #0d1b2e 100%);
+  padding: 90px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative background grid */
+.tz-categories::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(79, 195, 247, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 195, 247, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+}
+
+/* Ambient glow top */
+.tz-categories::after {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(79, 195, 247, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ---- Container ---- */
+.tz-categories__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Header ---- */
+.tz-categories__header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.tz-categories__title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 14px 0;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  text-shadow: 0 0 40px rgba(79, 195, 247, 0.25);
+}
+
+.tz-categories__title::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 4px;
+  background: var(--gradient-primary, linear-gradient(135deg, #44BFF6 0%, #18B0F4 100%));
+  border-radius: 2px;
+  margin: 14px auto 0;
+}
+
+.tz-categories__subtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ---- Grid ---- */
+.tz-categories__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* ---- Card ---- */
+.tz-cat-card {
+  position: relative;
+  background: linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+  border: 1px solid rgba(79, 195, 247, 0.2);
+  border-radius: 20px;
+  padding: 36px 24px 28px;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+  outline: none;
+}
+
+.tz-cat-card:hover,
+.tz-cat-card:focus-visible {
+  transform: translateY(-6px);
+  border-color: rgba(79, 195, 247, 0.55);
+  background: linear-gradient(145deg, rgba(79,195,247,0.1) 0%, rgba(24,176,244,0.04) 100%);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(79, 195, 247, 0.15),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+.tz-cat-card:focus-visible {
+  outline: 2px solid var(--accent-color, #4FC3F7);
+  outline-offset: 3px;
+}
+
+/* Card inner glow (hover reveal) */
+.tz-cat-card__glow {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, rgba(79, 195, 247, 0.18) 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.tz-cat-card:hover .tz-cat-card__glow,
+.tz-cat-card:focus-visible .tz-cat-card__glow {
+  opacity: 1;
+}
+
+/* ---- Badge ---- */
+.tz-cat-card__badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: linear-gradient(135deg, #44BFF6 0%, #18B0F4 100%);
+  color: #0d1b2e;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tz-cat-card__badge--hot {
+  background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+  color: #ffffff;
+}
+
+/* ---- Icon wrap ---- */
+.tz-cat-card__icon-wrap {
+  width: 110px;
+  height: 110px;
+  background: rgba(79, 195, 247, 0.07);
+  border: 1px solid rgba(79, 195, 247, 0.18);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  flex-shrink: 0;
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tz-cat-card:hover .tz-cat-card__icon-wrap,
+.tz-cat-card:focus-visible .tz-cat-card__icon-wrap {
+  background: rgba(79, 195, 247, 0.14);
+  border-color: rgba(79, 195, 247, 0.4);
+  box-shadow: 0 0 20px rgba(79, 195, 247, 0.2);
+}
+
+.tz-cat-card__icon {
+  width: 64px;
+  height: 64px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.tz-cat-card:hover .tz-cat-card__icon,
+.tz-cat-card:focus-visible .tz-cat-card__icon {
+  transform: scale(1.08);
+}
+
+/* ---- Content ---- */
+.tz-cat-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.tz-cat-card__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
+  letter-spacing: -0.2px;
+}
+
+.tz-cat-card__desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.58);
+  line-height: 1.65;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ---- CTA link ---- */
+.tz-cat-card__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 4px;
+  border-top: 1px solid rgba(79, 195, 247, 0.12);
+  width: 100%;
+}
+
+.tz-cat-card__link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-color, #4FC3F7);
+  letter-spacing: 0.2px;
+  transition: color 0.2s ease;
+}
+
+.tz-cat-card__arrow {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+/* Arrow flips for RTL — points left to go "forward" in RTL */
+.tz-cat-card:hover .tz-cat-card__arrow,
+.tz-cat-card:focus-visible .tz-cat-card__arrow {
+  transform: translateX(-5px);
+}
+
+.tz-cat-card:hover .tz-cat-card__link,
+.tz-cat-card:focus-visible .tz-cat-card__link {
+  color: #ffffff;
+}
+
+/* ========== Responsive ========== */
+
+/* 2 columns on tablet */
+@media (max-width: 1024px) {
+  .tz-categories__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* 2 columns on small tablet */
+@media (max-width: 768px) {
+  .tz-categories {
+    padding: 60px 16px;
+  }
+
+  .tz-categories__header {
+    margin-bottom: 40px;
+  }
+
+  .tz-categories__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .tz-cat-card {
+    padding: 28px 18px 22px;
+  }
+
+  .tz-cat-card__icon-wrap {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 18px;
+  }
+
+  .tz-cat-card__icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .tz-cat-card__title {
+    font-size: 1.05rem;
+  }
+
+  .tz-cat-card__desc {
+    font-size: 0.84rem;
+  }
+}
+
+/* 1 column on mobile */
+@media (max-width: 480px) {
+  .tz-categories__grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .tz-cat-card {
+    padding: 28px 24px 22px;
+  }
+
+  .tz-cat-card__icon-wrap {
+    width: 96px;
+    height: 96px;
+  }
+
+  .tz-cat-card__icon {
+    width: 56px;
+    height: 56px;
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
